@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            border: 1px solid #000;
+        }
+        p{
+            line-height: 1.7;
+            font-size: 1.2rem;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div>
+            <h1>logo</h1>
+                <button onclick="themehandler()" id="btn"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+    <main>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae delectus blanditiis quisquam distinctio sapiente officiis ipsa fuga. Illum reprehenderit sint dolorum debitis, quidem suscipit molestiae consectetur veritatis culpa saepe eaque?
+        Impedit eaque a, repudiandae iure, veniam nemo pariatur ex, accusantium labore nesciunt temporibus est esse minus ipsam amet tempore porro natus optio. Perspiciatis reiciendis ipsa esse non eum amet? Aliquam.
+        Ullam exercitationem recusandae earum hic cupiditate debitis alias, pariatur nobis voluptates vel neque, vitae ea fugit animi dolore molestiae a quibusdam mollitia ad doloribus officia? Obcaecati odio tenetur enim quidem.
+        Ab veritatis culpa, reprehenderit quis assumenda cum repellat odio dicta officia ex, odit quidem explicabo laudantium vel nisi maiores labore veniam similique. Accusamus neque fuga sequi asperiores officia. Magnam, autem?
+        Modi placeat necessitatibus sequi dolores id sapiente sint debitis rem eligendi explicabo voluptatem architecto asperiores inventore, numquam ipsa ea. Numquam commodi accusantium ipsa rem consequuntur obcaecati eum odit placeat dolor.
+        Omnis earum laudantium, sapiente, vel repellendus ducimus quisquam debitis eius labore fuga reprehenderit excepturi, accusamus perferendis eveniet exercitationem illum tenetur quaerat deleniti fugit. Dolore, corrupti aperiam ipsam accusamus nisi molestiae.
+        Suscipit, facilis! Id non aperiam aliquid enim veritatis, quasi distinctio repellat ipsa veniam ex recusandae, ipsam labore totam rem ut minus quam et vel qui cupiditate quaerat dignissimos exercitationem eveniet?
+        Repudiandae illo similique nihil facilis omnis odit, vel cum magni ut ad minus mollitia totam reiciendis voluptates, delectus ea sequi recusandae nostrum alias illum sed, possimus obcaecati dolore. Animi, expedita?
+        Aspernatur non enim ullam illo vero laboriosam laborum maiores, quisquam ipsa atque eos illum quidem, dolore amet animi velit aliquid quasi reprehenderit. Sapiente harum quo perferendis magni ullam minima error.
+        Sequi deleniti sapiente odit totam at, consequatur sit voluptas molestiae? Sequi necessitatibus a fugit, delectus earum quisquam neque culpa quasi impedit illum ex repellat eum voluptas iure quae natus amet?</p>
+    </main>
+
+    <script>
+        let btn=document.getElementById('btn');
+        let islighttheme=false;
+
+        function themehandler(){
+            islighttheme= !islighttheme;
+            console.log(islighttheme);
+            if(islighttheme==true){
+                document.body.style.backgroundColor='#0c0c0c';
+                document.body.style.color='#fff';
+                btn.innerHTML='<i class="fa-solid fa-sun"></i>'
+            }else{
+                document.body.style.backgroundColor='#fff';
+                document.body.style.color='#0c0c0c';
+                btn.innerHTML='<i class="fa-solid fa-moon"></i>'
+            }
+            
+        }
+    </script>
+</body>
+</html>
